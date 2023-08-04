@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ninja Corp!</title>
+</head>
+
+<body>
+
+    <!-- scripts -->
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-firestore.js"></script>
+    <script>
+        // Initialize Firebase
+        const config = {
+            apiKey: "AIzaSyCy5YMGxOl6HskDhwxyFaLrMcxwickoKI4",
+            authDomain: "treediagram-d3.firebaseapp.com",
+            projectId: "treediagram-d3",
+            storageBucket: "treediagram-d3.appspot.com",
+            messagingSenderId: "33665937758",
+            appId: "1:33665937758:web:41d5468aac4ebb8c529fcf",
+            measurementId: "G-N0KJK66MHY"
+        };
+        firebase.initializeApp(config);
+        const db = firebase.firestore();
+        const settings = { timestampsInSnapshots: true };
+        db.settings(settings);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="index.js"></script>
+    <script src="graph.js"></script>
+</body>
+
+</html>
